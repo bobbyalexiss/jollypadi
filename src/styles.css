@@ -2709,3 +2709,20 @@ html {
     font-size: 11px;
   }
 }
+
+/* Desktop hero art direction: give the founder a clear right-hand column. */
+@media (min-width: 901px) {
+  .hero-copy {
+    width: 58vw;
+    max-width: 1120px;
+  }
+
+  .hero h1 {
+    font-size: clamp(64px, 7.2vw, 132px);
+    max-width: 100%;
+  }
+
+  .hero h1 em {
+    white-space: nowrap;
+  }
+}
