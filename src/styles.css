@@ -2670,3 +2670,42 @@ html {
     font-size: .88em;
   }
 }
+
+/* Keep the mobile navigation above the hero as an opaque, scrollable panel. */
+@media (max-width: 650px) {
+  .header:has(.nav.open) {
+    background: var(--navy);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 33;
+    background: var(--navy);
+    padding: calc(78px + env(safe-area-inset-top)) 9vw calc(28px + env(safe-area-inset-bottom));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    flex: 0 0 auto;
+    padding: clamp(13px, 2.5vh, 21px) 0;
+    font-size: clamp(30px, 8vw, 38px);
+    line-height: 1.15;
+  }
+
+  .nav .nav-cta {
+    margin-top: clamp(20px, 4vh, 32px);
+    padding: 14px 0;
+    font-size: 11px;
+  }
+}
