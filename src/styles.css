@@ -249,22 +249,6 @@ button {
   color: #c4c2bd;
 }
 
-.scroll-cue {
-  position: absolute;
-  bottom: 29px;
-  left: 5.4vw;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font: 9px var(--mono);
-  letter-spacing: .12em;
-  color: #b3b4b5;
-}
-
-.scroll-cue svg {
-  color: var(--gold);
-}
-
 .section-pad {
   padding: 118px 10.5vw;
 }
@@ -1439,10 +1423,6 @@ button {
   }
   .hero-side-note {
     display: none;
-  }
-  .scroll-cue {
-    left: 7vw;
-    bottom: 27px;
   }
   .section-pad {
     padding: 76px 7vw;
